@@ -1,12 +1,16 @@
 ---
 driver:
- name: vagrant
+  name: vagrant
 
 provisioner:
- name: chef_zero
+  name: chef_solo
 
 platforms:
- - name: terrywang/archlinux
-   driver_config:
-   box: terrywang/archlinux
+  - name: ubuntu-14.04
+  - name: terrywang/archlinux
 
+suites:
+  - name: default
+    run_list:
+      - recipe[chef-home-infra::default]
+    attributes:

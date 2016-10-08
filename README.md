@@ -23,3 +23,11 @@ Verify it's up
 `vagrant global-status`
 
 `ssh localhost -p 2222 -l vagrant`
+
+#Doig tests
+
+```$ kitchen list
+Instance                     Driver   Provisioner  Verifier  Transport  Last Action
+default-terrywang-archlinux  Vagrant  ChefSolo     Busser    Ssh        <Not Created>
+$ kitchen create default-terrywang-archlinux```
+
