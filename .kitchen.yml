@@ -1,0 +1,12 @@
+---
+driver:
+ name: vagrant
+
+provisioner:
+ name: chef_zero
+
+platforms:
+ - name: terrywang/archlinux
+   driver_config:
+   box: terrywang/archlinux
+
