@@ -37,7 +37,7 @@ e.g.
 A new test was created to check if a user's home directory, but we've not added the recipe yet to create it.
 
 `kitchen verify` confirms this:
-$ kitchen create default-terrywang-archlinux```
+
 ```
 -----> Running bats test suite
  ✓ chef-client binary is found in PATH
@@ -46,10 +46,11 @@ $ kitchen create default-terrywang-archlinux```
           (in test file /tmp/verifier/suites/bats/user_exists.bats, line 11)
             `[ "$status" -eq 0 ]' failed
        
-       3 tests, 1 failure```
+       3 tests, 1 failure
+```
 
 ```$ kitchen list
 Instance                     Driver   Provisioner  Verifier  Transport  Last Action
 default-ubuntu-1404	     Vagrant  ChefSolo     Busser    Ssh        <Not Created>
 default-terrywang-archlinux  Vagrant  ChefSolo     Busser    Ssh        <Not Created>
-
+```

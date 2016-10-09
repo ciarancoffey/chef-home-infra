@@ -3,7 +3,9 @@
 # Recipe:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
-users_manage "bobl" do
+user 'bobl' do
+      home '/home/bobl'
+      supports manage_home: true
       action [:create]
 end
 
