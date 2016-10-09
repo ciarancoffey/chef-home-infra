@@ -1,13 +1,17 @@
 #Goals
 Create a boblight user and install a script to be run in their home dir
 
-#Starting out
+##Starting out
 You should clone this repository and add your private key file from Chef, ccoffey-validator.pem and encrypted_data_bag_secret in the .chef directory.
+
+The chef cookbook is `./cookbooks/home_infra`
+
+And the tests are in `./tests/`
 
 ##Bootstrap new host:
 `knife bootstrap ssh.ccoffey.ie -x ccoffey --environment prod --sudo --secret-file .chef/encrypted_data_bag_secret`
 
-#Setup a vagrant environment.
+##Setup a vagrant environment.
 I use arch as a dev machine, as usual, follow the excellent [arch wiki](https://wiki.archlinux.org/index.php/Vagrant)
 
 `vagrant init terrywang/archlinux`
@@ -27,7 +31,7 @@ Verify it's up
 
 `ssh localhost -p 2222 -l vagrant`
 
-#Doing tests
+##Doing tests
 
 We can't run tests against arch yet, as support for arch in kitchen is minimal.
 We can run our tests on ubuntu though.
@@ -54,16 +58,10 @@ A new test was created to check if a user's home directory, but we've not added 
        3 tests, 1 failure
 ```
 
-#Adding to cookbook
+##Adding to cookbook
 The recipes that can be run (what runs is defined in the chef console) are in `./cookbooks/home_infra/recipies/`
 As above, write the test first, 
 
-Test it fales `kitchen verify`, 
+Test it fails `kitchen verify`, 
 
 add the recipe and converge `kitchen converge`
-
-$ kitchen list
-Instance                     Driver   Provisioner  Verifier  Transport  Last Action
-default-ubuntu-1404	     Vagrant  ChefSolo     Busser    Ssh        <Not Created>
-default-terrywang-archlinux  Vagrant  ChefSolo     Busser    Ssh        <Not Created>
-```
