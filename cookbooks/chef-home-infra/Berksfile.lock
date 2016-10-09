@@ -2,7 +2,7 @@ DEPENDENCIES
   chef-client
   chef-home-infra
     git: git@github.com:ciarancoffey/chef-home-infra.git
-    revision: e9574250fa3fdded5c6d19a4128000550659e793
+    revision: dedde2235d4da95858e14a2aa0051fa5450ecec4
 
 GRAPH
   chef-client (6.0.0)
