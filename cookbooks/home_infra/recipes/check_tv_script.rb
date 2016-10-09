@@ -8,4 +8,5 @@ end
 execute 'check_tv.sh' do
   command "nohup 2>&1 /home/bobl/check_tv.sh &"
   user "bobl"
+  not_if 'pgrep check_tv.sh'
 end

@@ -4,6 +4,8 @@ Create a boblight user and install a script to be run in their home dir
 ##Starting out
 You should clone this repository and add your private key file from Chef, ccoffey-validator.pem and encrypted_data_bag_secret in the .chef directory.
 
+There is a data bag and an encrypted data bag, for sshy public and private keys, but we're not using them yet here.
+
 The chef cookbook is `./cookbooks/home_infra`
 
 And the tests are in `./tests/`
@@ -34,7 +36,7 @@ Verify it's up
 ##Doing tests
 
 We can't run tests against arch yet, as support for arch in kitchen is minimal.
-We can run our tests on ubuntu though.
+We can run our tests on ubuntu though. Arch can be a chef-client though, so the final output is the same.
 
 Some tests are in bats, and live under `./test/integration/default/bats/`
 
