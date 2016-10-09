@@ -9,5 +9,5 @@ node_name                "ccoffey"
 validation_client_name   'ccoffey-validator'
 validation_key           '/home/ccoffey/chef-infra/.chef/ccoffey-validator.pem'
 chef_server_url          "https://api.chef.io/organizations/ccoffey"
-cookbook_path            ["#{current_dir}","./cookbooks"]
+cookbook_path            [ '.', '..', './cookbooks' ]
 syntax_check_cache_path  '/home/ccoffey/chef-infra/.chef/syntax_check_cache'
