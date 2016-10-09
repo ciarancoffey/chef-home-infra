@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
-user "bobl" do
+users_manage "bobl" do
       action [:create]
 end
 

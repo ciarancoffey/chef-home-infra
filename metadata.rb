@@ -4,6 +4,6 @@ maintainer_email 'ciaran@ccoffey.ie'
 license          'all_rights'
 description      'Home infrastructure'
 long_description 'Installs/Configures Home infrastructure'
-version          '0.1.2'
+version          '0.1.3'
 depends          'users'
 
