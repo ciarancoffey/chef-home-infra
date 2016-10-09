@@ -1,4 +1,4 @@
-name             'chef-home-infra'
+name             'home_infra'
 maintainer       'Ciarán Coffey'
 maintainer_email 'ciaran@ccoffey.ie'
 license          'all_rights'

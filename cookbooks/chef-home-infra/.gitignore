@@ -1,8 +1,0 @@
-*.swp
-raspian/
-.chef/*.pem
-encrypted_data_bag_secret
-.kitchen
-.chef/local-mode-cache
-.kitchen/
-.kitchen.local.yml
