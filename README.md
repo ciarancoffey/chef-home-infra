@@ -33,6 +33,7 @@ We can't run tests against arch yet, as support for arch in kitchen is minimal.
 We can run our tests on ubuntu though.
 
 Some tests are in bats, and live under `./test/integration/default/bats/`
+
 More are in serverspec, and live under `./test/integration/default/serverspec/`
 
 ##Adding tests.
@@ -53,12 +54,11 @@ A new test was created to check if a user's home directory, but we've not added 
        3 tests, 1 failure
 ```
 
-```
 #Adding to cookbook
 The recipes that can be run (what runs is defined in the chef console) are in `./cookbooks/home_infra/recipies/`
 As above, write the test first, 
 
-Test it faies `kitchen verify`, 
+Test it fales `kitchen verify`, 
 
 add the recipe and converge `kitchen converge`
 
