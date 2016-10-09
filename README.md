@@ -62,6 +62,12 @@ A new test was created to check if a user's home directory, but we've not added 
 The recipes that can be run (what runs is defined in the chef console) are in `./cookbooks/home_infra/recipies/`
 As above, write the test first, 
 
+After an update, do a version bump in `./cookbooks/home_infra/metadata.rb`
+
+`berks update && berks upload`
+
+This is necessary to get the chef server to know the cookbook has been modified.
+
 Test it fails `kitchen verify`, 
 
 add the recipe and converge `kitchen converge`
