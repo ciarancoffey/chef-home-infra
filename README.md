@@ -26,8 +26,12 @@ Verify it's up
 
 #Doig tests
 
+We can't run tests against arch yet, as support for arch in kitchen is minimal.
+We can run our tests on ubuntu though.
+
 ```$ kitchen list
 Instance                     Driver   Provisioner  Verifier  Transport  Last Action
+default-ubuntu-1404	     Vagrant  ChefSolo     Busser    Ssh        <Not Created>
 default-terrywang-archlinux  Vagrant  ChefSolo     Busser    Ssh        <Not Created>
 $ kitchen create default-terrywang-archlinux```
 

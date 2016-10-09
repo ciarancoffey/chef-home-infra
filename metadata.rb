@@ -5,4 +5,5 @@ license          'all_rights'
 description      'Home infrastructure'
 long_description 'Installs/Configures Home infrastructure'
 version          '0.1.0'
+depends          'users'
 
