@@ -3,3 +3,8 @@
 # Recipe:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
+users_manage "bobl" do
+	        public_key "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCjdBBXdPjFwk+/Mym0MJeb5fJdEyA1GpP1VPRT9YbMcbEj1sTk5xOfytQJoSAPeLGJ6yKyuiRFal15l0XlyQg1576WX/upzr6jXu+7YHqwbVcuwxoSaByMk9+129UQwDgBroIGgfuqrIaL7a3KmKqKnPmBKmQHFfMVUtIcz+x0WvC1mTMPn35Hw6uEwjQfpNFtFZDRIysV/1AnSpKUt7YgevIS4zwNzgaV9vrk8iMJed76Fm4syWK+wDmHLZSKHc9J6sR7bcZFp1cNtWtAyTBUgWQsMp+ZTm4JG1XF74tnU7v2iLCRMAkga6eN2EQE90YKbkLuZMzonF4/j5g5o7PbZQQbB/KeaSQBCwmYEx2HYH18ABJy4dGUqoFHcNqAqZBaUVyBV7LtRpazOG/WwU0JbE2xLlpMAyDKDTnbqpuU6YPwVap3E6Crc4D8poqltIYq9snXXjiPk9mdzFlOjMFSIRxPFGNx8+1FW+Ax928VG8ctBgC/tkEhZaGILQV4qj5dZzT7QtUHnccM5ewTJ8KegqJ9f/lXsybEGrb9sKGvahf3xhz/ORSuQFlYnsJ7u8Rkgbys+2l5SjJXAd5VRpARdvtjx8oI0g/23i1mVzUIjkhjky3PIeGWDug/NzXNC+mUwgYp0E6h3jKjtAxeNYOWL7LEotKQayMprralOjE5qQ== bobl@ccoffey.ie"
+      action [:create]
+end
+
