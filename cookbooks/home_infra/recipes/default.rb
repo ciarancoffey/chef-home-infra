@@ -9,3 +9,8 @@ user 'bobl' do
       action [:create]
 end
 
+group 'uucp' do
+ action :modify
+ members 'bobl'
+ append true
+end

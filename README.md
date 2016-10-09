@@ -1,6 +1,10 @@
 #Goals
 Create a boblight user and install a script to be run in their home dir
 
+The scope will creep to cover everything I run on my home machine, but getting boblightd to run is enough for now.
+
+boblightd should only run if my TV is on, so there's a simple bash script which checks if it is on.
+
 ##Starting out
 You should clone this repository and add your private key file from Chef, ccoffey-validator.pem and encrypted_data_bag_secret in the .chef directory.
 

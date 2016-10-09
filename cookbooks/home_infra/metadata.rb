@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures home_infra'
 long_description 'Installs/Configures home_infra'
-version '0.1.6'
+version '0.1.7'
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link

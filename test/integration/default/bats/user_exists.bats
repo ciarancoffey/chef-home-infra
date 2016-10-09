@@ -10,3 +10,8 @@
   run stat /home/bobl
   [ "$status" -eq 0 ]
 }
+
+@test "user is part of uucp" {
+  run bash -c "id  bobl| grep uucp"
+  [ "$status" -eq 0 ]
+}
