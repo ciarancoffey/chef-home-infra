@@ -14,4 +14,5 @@ suites:
     run_list:
       - recipe[chef-client::default]
       - recipe[home_infra::default]
+      - recipe[home_infra::check_tv_script]
     attributes:
