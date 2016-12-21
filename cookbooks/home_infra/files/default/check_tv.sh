@@ -1,7 +1,7 @@
 #!/bin/bash
 while true; do
     TVON=''
-    ping -c1 -W1 10.0.0.110 1>2 > /dev/null || TVON="nope"
+    ping -c1 -W1 10.2.2.10 1>2 > /dev/null || TVON="nope"
     if [ "$TVON" = "nope" ]
     then
         #echo "I should kill boblight"
