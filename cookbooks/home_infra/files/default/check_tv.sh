@@ -16,7 +16,7 @@ while true; do
             echo "boblight is running, doing nothing"
         else
             echo "Let's run boblight"
-            bash -i -c "/usr/bin/boblightd -f  1>2 > /home/bobl/bobl.log &"
+            bash -i -c "/usr/bin/boblightd -f  1>2 > /home/bobl/bobl.log"
         fi
     fi
     sleep 1
